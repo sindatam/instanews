@@ -5,7 +5,7 @@ $('#dropdown-menu').on('change', function () {
    })
       .done(function (data) {
          // loop in the function in order to get 12 different articles in the dropdown menu
-         $('p').empty();
+         $('.news-area').empty();
          for (i = 0; i <= 11; i++) {
             console.log(data.results);
             var description = data.results[i].abstract
